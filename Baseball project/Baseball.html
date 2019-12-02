@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BASEBALL</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    html,body{
+        height: 100%;
+        background-color:black;
+    }
+   
+    
+    #baseball{
+        background:url('Baseball.png') no-repeat center center;
+        position:absolute;
+        background-size:contain;
+        height:15px;
+        width:15px;
+        left:510px; 
+        top:660px;
+    }
+   
+   #box1{
+       width:50px;
+       height:50px;
+       background-color:lightblue;
+       opacity:0;
+       position:absolute;
+       left:680px;
+       top:540px;
+   }
+   
+   #box2{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:570px;
+       top:400px;
+       opacity:0;
+   }
+   
+   #box3{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:370px;
+       top:460px;
+       opacity:0;
+   }
+   
+   #box4{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:290px;
+       top:560px;
+       opacity:0;
+   }
+   
+   #box5{
+       width:50px;
+       height:57px;
+       background-color:black;
+       position:absolute;
+       left:490px;
+       top:600px;
+       opacity:0;
+   }
+   
+   #box6{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:780px;
+       top:320px;
+       opacity:0;
+   }
+   
+   #box7{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:480px;
+       top:125px;
+       opacity:0;
+   }
+   
+   #box8{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:160px;
+       top:340px;
+       opacity:0;
+   }
+   
+   #box9{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:490px;
+       top:820px;
+       opacity:0;
+   }
+   
+   #box10{
+       width:50px;
+       height:50px;
+       background-color:black;
+       position:absolute;
+       left:700px;
+       top:560px;
+       opacity:0;
+   }
+   
+   #firstbase{
+       display:none;
+   }
+    #secondbase{
+        display:none;
+    }
+    
+    #shortstop{
+        display:none;
+    }
+    
+    #thirdbase{
+        display:none;
+    }
+    
+    #pitcher{
+        display:none;
+    }
+    
+    #rightfield{
+        display:none;
+    }
+    
+    #centerfield{
+        display:none;
+    }
+    
+    #leftfield{
+        display:none;
+    }
+    
+    #catcher{
+        display:none;
+    }
+    
+    #hitter{
+        display:none;
+    }
+    
+    #fielder{
+        display:none;
+    }
+    
+    #exampleboxfirstbase{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:680px;
+        top:540px;
+        opacity:0;
+    }
+    
+    #exampleboxsecondbase{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:lightgreen;
+        position:absolute;
+        left:587px;
+        top:427px;
+        opacity:0;
+    }
+    
+    #exampleboxshortstop{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:394px;
+        top:482px;
+        opacity:0;
+    }
+    
+    #exampleboxthirdbase{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:310px;
+        top:580px;
+        opacity:0;
+    }
+
+    #exampleboxpitcher{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:510px;
+        top:635px;
+        opacity:0;
+    }
+    
+    #exampleboxcatcher{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:510px;
+        top:780px;
+        opacity:0;
+    }
+
+    #exampleboxrightfield{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:813px;
+        top:332px;
+        opacity:0;
+    }
+    
+    #exampleboxcenterfield{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:500px;
+        top:150px;
+        opacity:0;
+    }
+    
+    #exampleboxleftfield{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:yellow;
+        position:absolute;
+        left:180px;
+        top:360px;
+        opacity:0;
+    }
+   
+   </style>
+</head>
+    <body>
+        <img id="baseballfield" src='baseballfield.gif'>
+        <div id="baseball"></div>
+        <img id='firstbase' src='Anthony Rizzo.png' player>
+        <img id='secondbase' src='Javier Baez.png' player>
+        <img id='shortstop' src='Francisco Lindor.png' player>
+        <img id='thirdbase' src='Kris Bryant.png' player>
+        <img id='pitcher' src='Nolan Ryan.png' player>
+        <img id='rightfield' src='Bryce Harper.png' player>
+        <img id='centerfield' src='Mike Trout.png' player>
+        <img id='leftfield' src='Ken Griffey Jr.png' player>
+        <img id='catcher' src='Willson Contreras.png' player>
+        <img id='hitter' src='Giancarlo Stanton.png' player>
+        <img id='fielder' src='yourout.png'>
+        <div id='box1'></div>
+        <div id='box2'></div>
+        <div id='box3'></div>
+        <div id='box4'></div>
+        <div id='box5'></div>
+        <div id='box6'></div>
+        <div id='box7'></div>
+        <div id='box8'></div>
+        <div id='box9'></div>
+        <div id='box10'></div>
+        <div id='exampleboxfirstbase'></div>
+        <div id='exampleboxsecondbase'></div>
+        <div id='exampleboxshortstop'></div>
+        <div id='exampleboxthirdbase'></div>
+        <div id='exampleboxpitcher'></div>
+        <div id='exampleboxcatcher'></div>
+        <div id='exampleboxrightfield'></div>
+        <div id='exampleboxcenterfield'></div>
+        <div id='exampleboxleftfield'></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src='baseball.js'></script>
+    </body>
+</html>
