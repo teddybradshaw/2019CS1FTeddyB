@@ -1,6 +1,8 @@
 var xTarget = Math.floor(Math.random() * $( window ).width());
 var yTarget = -Math.floor(Math.random() * $( window ).height());
 
+var jump = new Audio("jump.mp3")
+
 
 $('#baseball').click(
     function(){
@@ -29,7 +31,7 @@ function outcome(){
         $('#fielder').fadeIn();
     }  
     else{
-           
+        jump.play();   
     }
     
     
