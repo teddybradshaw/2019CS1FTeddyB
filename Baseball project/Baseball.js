@@ -1,5 +1,5 @@
-var xTarget = Math.floor(Math.random() * $( window ).width());
-var yTarget = -Math.floor(Math.random() * $( window ).height());
+var xTarget = Math.floor(Math.random() * $( window ).width())-400;
+var yTarget = -Math.floor(Math.random() * $( window ).height())+200;
 
 var jump = new Audio("jump.mp3")
 
@@ -12,21 +12,25 @@ $('#baseball').click(
     
 );
 
-
+function findplayer(ballPosition){
+    for (var i=0; i<10; i++){
+        console.log ('hello')
+    }
+}
 
 function outcome(){
     var ball = $( "#baseball" );
     var ballPosition = ball.position();
     var ballX = ballPosition.left;
     var ballY = ballPosition.top;
-    
+    findplayer
     var player = $('#exampleboxrightfield');
     var playerPosition = player.position();
     var playerX = playerPosition.left;
     var playerY = playerPosition.top;
     
-    
-    if( distance(ballX,ballY,playerX,playerY) < 100 ){
+
+    if( distance(ballX,ballY,playerX,playerY) < 350 ){
         console.log ('out')
         $('#fielder').fadeIn();
     }  
