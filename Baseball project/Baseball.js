@@ -12,6 +12,11 @@ $('#baseball').click(
     
 );
 
+function homerun(){
+    var a = Math.tan(45);
+    var b = Math.tan(45);
+}
+
 function outcome(){
     var ball = $( "#baseball" );
     var ballPosition = ball.position();
@@ -46,10 +51,7 @@ function distance(x1,y1,x2,y2){
   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 }
 
-function homerun(){
-    var a = Math.tan(45);
-    var b = Math.tan(45);
-}
+
 
 $('#box1').click(
     function(){
