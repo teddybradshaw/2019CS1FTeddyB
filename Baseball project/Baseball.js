@@ -31,66 +31,21 @@ function outcome(){
     else{
         jump.play();   
     }
+
     
     
     console.log(distance(ballX,ballY, playerX, playerY));
     
 } 
 
+
+
+
 function distance(x1,y1,x2,y2){
     var sideA = Math.abs(x1-x2);
     var sideB = Math.abs(y1-y2);
   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 }
-
-/*function cf(){
-    var ball = $('#exampleboxcenterfield');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function rf(){
-    var ball = $('#exampleboxrightfield');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function thirdbase(){
-    var ball = $('#exampleboxthirdbase');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function shortstop(){
-    var ball = $('#exampleboxshortstop');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function secondbase(){
-    var ball = $('#exampleboxsecondbase');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function firstbase(){
-    var ball = $('#exampleboxfirstbase');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}
-
-function pitcher(){
-    var ball = $('#exampleboxpitcher');
-    var ballPosition = ball.position();
-    var ballX = ballPosition.left;
-    var ballY = ballPosition.top;
-}*/
 
 $('#box1').click(
     function(){
