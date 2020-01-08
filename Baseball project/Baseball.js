@@ -6,17 +6,11 @@ var jump = new Audio("jump.mp3")
 
 $('#baseball').click(
     function(){
-     TweenMax.to('#baseball',.5,{x:-8,y:120,ease:Sine.easeOut});
+     TweenMax.to('#baseball',.5,{x:-9,y:95,ease:Sine.easeOut});
      TweenMax.to('#baseball',2,{x: xTarget,y: yTarget,delay:.4,ease:Sine.easeOut,onComplete:outcome});
     }
     
 );
-
-function findplayer(ballPosition){
-    for (var i=0; i<10; i++){
-        console.log ('hello')
-    }
-}
 
 function outcome(){
     var ball = $( "#baseball" );
