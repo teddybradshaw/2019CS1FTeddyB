@@ -17,7 +17,6 @@ function outcome(){
     var ballPosition = ball.position();
     var ballX = ballPosition.left;
     var ballY = ballPosition.top;
-    findplayer
     var player = $('#exampleboxrightfield');
     var playerPosition = player.position();
     var playerX = playerPosition.left;
@@ -45,6 +44,11 @@ function distance(x1,y1,x2,y2){
     var sideA = Math.abs(x1-x2);
     var sideB = Math.abs(y1-y2);
   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+}
+
+function homerun(){
+    var a = Math.tan(45);
+    var b = Math.tan(45);
 }
 
 $('#box1').click(
