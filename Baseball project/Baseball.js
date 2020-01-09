@@ -12,7 +12,8 @@ $('#baseball').click(
     
 );
 
-function fairball(){
+function fairball(ballX,ballY){
+    
     var a = Math.tan(45),{x:-9,y:95};
     var b = Math.tan(135) {x:-9,y:95};
 }
@@ -26,7 +27,12 @@ function outcome(){
     var playerPosition = player.position();
     var playerX = playerPosition.left;
     var playerY = playerPosition.top;
-    
+
+    if(fairball(ballX,ballY))
+        console.log('fair ball');
+    else{
+        console.log('foul ball');
+    }
 
     if( distance(ballX,ballY,playerX,playerY) < 350 ){
         console.log ('out')
@@ -42,15 +48,15 @@ function outcome(){
     
 } 
 
-function dingers(){
-    if var b < x < var a{
+/*function dingers(){
+    if var b < x & x > var a{
         console.log ('fair ball')
     }
     else{
         console.log ('foul ball')
     }
 }
-
+*/
 
 function distance(x1,y1,x2,y2){
     var sideA = Math.abs(x1-x2);
