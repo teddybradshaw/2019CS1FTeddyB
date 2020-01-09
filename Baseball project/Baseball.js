@@ -12,9 +12,9 @@ $('#baseball').click(
     
 );
 
-function homerun(){
-    var a = Math.tan(45);
-    var b = Math.tan(45);
+function fairball(){
+    var a = Math.tan(45),{x:-9,y:95};
+    var b = Math.tan(135) {x:-9,y:95};
 }
 
 function outcome(){
@@ -42,7 +42,14 @@ function outcome(){
     
 } 
 
-
+function dingers(){
+    if var b < x < var a{
+        console.log ('fair ball')
+    }
+    else{
+        console.log ('foul ball')
+    }
+}
 
 
 function distance(x1,y1,x2,y2){
