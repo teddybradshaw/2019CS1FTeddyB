@@ -2,6 +2,7 @@ var xTarget = Math.floor(Math.random() * $( window ).width())-400;
 var yTarget = -Math.floor(Math.random() * $( window ).height())+200;
 
 var jump = new Audio("jump.mp3")
+var ted = new Audio("ted.mp3")
 
 
 $('#baseball').click(
@@ -12,12 +13,12 @@ $('#baseball').click(
     
 );
 
-function fairball(ballX,ballY){
+/*function fairball(ballX,ballY){
     
     var a = Math.tan(45),{x:-9,y:95};
     var b = Math.tan(135) {x:-9,y:95};
 }
-
+*/
 function outcome(){
     var ball = $( "#baseball" );
     var ballPosition = ball.position();
@@ -28,18 +29,19 @@ function outcome(){
     var playerX = playerPosition.left;
     var playerY = playerPosition.top;
 
-    if(fairball(ballX,ballY))
+   /* if(fairball(ballX,ballY))
         console.log('fair ball');
     else{
         console.log('foul ball');
     }
-
+*/
     if( distance(ballX,ballY,playerX,playerY) < 350 ){
         console.log ('out')
         $('#fielder').fadeIn();
+        jump.play();
     }  
     else{
-        jump.play();   
+        ted.play();   
     }
 
     
