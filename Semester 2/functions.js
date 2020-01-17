@@ -22,11 +22,33 @@ console.log(a + "+" + b + " = " + add(a,b));
 * test the functions as shown above.
 */
 
- 
+ function multiply(param1, param2){
+     return param1 * param2;
+ }
 
- 
+ var a = 3;
+var b = 5;
 
- 
+console.log(a + "*" + b + " = " + multiply(a,b));
+
+
+ function divide(param1, param2){
+     return param1 / param2;
+ }
+
+ var a = 3;
+var b = 5;
+
+console.log(a + "/" + b + " = " + divide(a,b));
+
+function subtract(param1, param2){
+     return param1 - param2;
+ }
+
+ var a = 3;
+var b = 5;
+
+console.log(a + "-" + b + " = " + subtract(a,b));
 
 
 // CHALLENGE 2
@@ -48,9 +70,13 @@ console.log(a + "+" + b + " = " + add(a,b));
  
 
 function showNumbers(min, high){
-
+    for(var i=1; i<20; i++){
+        console.log(i);
+        console.log(showNumbers);
+    }
 }
 
+console.log(showNumbers(i));
 
 // CHALLENGE 3
 
