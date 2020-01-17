@@ -13,7 +13,7 @@ function add(param1, param2){
 */
 
 var a = 3;
-var b = 5;
+var b = 5; 
 
 console.log(a + "+" + b + " = " + add(a,b));
 
@@ -70,13 +70,13 @@ console.log(a + "-" + b + " = " + subtract(a,b));
  
 
 function showNumbers(min, high){
-    for(var i=1; i<20; i++){
+    for(var i=min; i<high; i++){
         console.log(i);
         console.log(showNumbers);
     }
 }
 
-console.log(showNumbers(i));
+showNumbers(0,10)
 
 // CHALLENGE 3
 
@@ -89,3 +89,10 @@ console.log(showNumbers(i));
 * should display 3,7,11
 */
 
+function showNumbers(min, high, countBy){
+    for(var i=min; i<high; i+=countBy){
+        console.log(i);
+    }
+}
+
+showNumbers(33,10,4)
