@@ -17,7 +17,7 @@ function removeVowels(str){
   console.log(noVowels(message))}
 
 
-  /*  function noVowels(message){
+    /*function noVowels(message){
     var vowels = 'aeiou';
     var string = "";
     for(var i=0; i<message.length; i++){
@@ -34,12 +34,14 @@ function removeVowels(str){
   console.log(noVowels(message));
   */
  
-  function everyOther(message){
+function everyOther(message){
     var string = "";
 
     for(var i=0; i<message.length; i+=4){
-
+        var fourthLetter = message.charAt(i);
+        string += fourthLetter;
     }
+        return string
   }
 
   message = "Hello, how are you?"
