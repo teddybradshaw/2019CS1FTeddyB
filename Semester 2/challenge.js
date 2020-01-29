@@ -15,3 +15,32 @@ function removeVowels(str){
 
   message = "Hello, how are you" ;
   console.log(noVowels(message))}
+
+
+  /*  function noVowels(message){
+    var vowels = 'aeiou';
+    var string = "";
+    for(var i=0; i<message.length; i++){
+       var currentletter = message.charAt(i)
+        if(vowels.indexOf(currentletter)<0)
+                string += currentletter;
+    }
+    return string
+}
+//check if current letter is in vowels
+ //if not in vowels, then copy to noVowelString
+
+  message = "Hello, how are you?";
+  console.log(noVowels(message));
+  */
+ 
+  function everyOther(message){
+    var string = "";
+
+    for(var i=0; i<message.length; i+=4){
+
+    }
+  }
+
+  message = "Hello, how are you?"
+  console.log(everyOther(message));
