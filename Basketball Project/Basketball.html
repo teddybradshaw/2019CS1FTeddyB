@@ -18,16 +18,16 @@
         background-size:contain;
         height:15px;
         width:15px;
-        left:500px;
-        top:400px;
+        left:86px;
+        top:56px;
     }
 
     #box1{
         width:200px;
         height:200px;
         position:absolute;
-        left:526px;
-        top:426px;
+        left:339px;
+        top:267px;
         background-color:#6203fc;
         color:#e3fc03;
         font-size:50px;
@@ -42,6 +42,17 @@
         left:10px;
         top:510px;
     }
+
+    #Basketballhoop{
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color:blue;
+        position:absolute;
+        left:89px;
+        top:259px;
+        opacity:0;
+    }
    </style>
 </head>
     <body>
@@ -49,6 +60,8 @@
     <img id="basketball" src='Basketball.png'>
     <img id="KOBE" src='Kobe.png' player>
     <div id='box1'>CLICK FOR KOBE</div>
+    <div id='Basketballhoop'></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     </body>
     <script src='Basketball.js'></script>
 </html>
