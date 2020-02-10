@@ -21,3 +21,9 @@ $('#basketball2').click(
         Kobeshot.play();
     }
 )
+
+$('#basketball3').click(
+    function(){
+        TweenMax.to('#basketball3',1,{x: -175, y: 109,delay:1,});
+    }
+)
