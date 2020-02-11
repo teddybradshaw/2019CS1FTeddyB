@@ -1,5 +1,6 @@
 var RayAllen = new Audio("Ray Allen.mp3")
 var Kobeshot = new Audio("Kobe last game.mp3")
+var Kyrieshot = new Audio("Kyrie Shot.mp3")
 
 $('#box1').click(
     function(){
@@ -24,6 +25,7 @@ $('#basketball2').click(
 
 $('#basketball3').click(
     function(){
-        TweenMax.to('#basketball3',1,{x: -175, y: 109,delay:1,});
+        TweenMax.to('#basketball3',1,{x: -175, y: 109,delay:10,});
+        Kyrieshot.play();
     }
 )
