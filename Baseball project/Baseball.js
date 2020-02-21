@@ -5,7 +5,8 @@ var jump = new Audio("jump.mp3")
 var ted = new Audio("ted.mp3")
 
 
-$('#baseball').click(
+
+/*$('#baseball').click(
     function(){
      TweenMax.to('#baseball',.5,{x:-9,y:95,ease:Sine.easeOut});
      TweenMax.to('#baseball',2,{x: xTarget,y: yTarget,delay:.4,ease:Sine.easeOut,onComplete:outcome});
@@ -13,12 +14,18 @@ $('#baseball').click(
     
 );
 
-/*function fairball(ballX,ballY){
+
+
+function fairball(ballX,ballY){
     
     var a = Math.tan(45),{x:-9,y:95};
     var b = Math.tan(135) {x:-9,y:95};
 }
 */
+
+$('#baseball').css({'left':'820px','top':'400px'});
+
+
 function outcome(){
     var ball = $( "#baseball" );
     var ballPosition = ball.position();
