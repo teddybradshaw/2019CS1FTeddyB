@@ -6,7 +6,7 @@ var ted = new Audio("ted.mp3")
 
 
 
-/*$('#baseball').click(
+$('#baseball').click(
     function(){
      TweenMax.to('#baseball',.5,{x:-9,y:95,ease:Sine.easeOut});
      TweenMax.to('#baseball',2,{x: xTarget,y: yTarget,delay:.4,ease:Sine.easeOut,onComplete:outcome});
@@ -15,15 +15,10 @@ var ted = new Audio("ted.mp3")
 );
 
 
+var homePlate=[523,717];
 
-function fairball(ballX,ballY){
-    
-    var a = Math.tan(45),{x:-9,y:95};
-    var b = Math.tan(135) {x:-9,y:95};
-}
-*/
+var diffX = Math.abs(e.pageX-homePlate[0])
 
-$('#baseball').css({'left':'820px','top':'400px'});
 
 
 function outcome(){
@@ -36,12 +31,7 @@ function outcome(){
     var playerX = playerPosition.left;
     var playerY = playerPosition.top;
 
-   /* if(fairball(ballX,ballY))
-        console.log('fair ball');
-    else{
-        console.log('foul ball');
-    }
-*/
+   
     if( distance(ballX,ballY,playerX,playerY) < 350 ){
         console.log ('out')
         $('#fielder').fadeIn();
@@ -57,15 +47,6 @@ function outcome(){
     
 } 
 
-/*function dingers(){
-    if var b < x & x > var a{
-        console.log ('fair ball')
-    }
-    else{
-        console.log ('foul ball')
-    }
-}
-*/
 
 function distance(x1,y1,x2,y2){
     var sideA = Math.abs(x1-x2);
