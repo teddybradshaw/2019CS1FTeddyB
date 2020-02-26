@@ -16,8 +16,10 @@ $('#baseball').click(
 
 
 var homePlate=[523,717];
+var rightfoulline=[984.250];
 
-var diffX = Math.abs(e.pageX-homePlate[0])
+var diffX = Math.abs(rightfoulline-homePlate)
+console.log(distance(diffX));
 
 
 
