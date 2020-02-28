@@ -21,7 +21,6 @@ var leftfoulline=[57,250];
 
 var diffX = Math.abs(rightfoulline-homePlate)
 var diffY = Math.abs(leftfoulline-homePlate)
-console.log(diffX,diffY)
 console.log(distance(diffX,diffY));
 
 
