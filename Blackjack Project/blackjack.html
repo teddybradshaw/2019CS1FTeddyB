@@ -7,8 +7,40 @@
 <style>
     #background{
         background-color:green;
+        width:1500px;
+        height:1500px;
     }
 
+    #table{
+        width:750px;
+        height:750px;
+        border-radius:50%;
+        background-color:#3d0505;
+        position:absolute;
+        left:100px;
+        top:175px;
+    }
+
+    #chair{
+        background:url('chair.png') no-repeat center center;
+        background-size:contain;
+        width:150px;
+        height:150px;
+        position:absolute;
+        left:400px;
+        top:10px;
+
+    }
+
+    #chair2{
+        background:url('chair.png') no-repeat center center;
+        background-size:contain;
+        width:150px;
+        height:150px;
+        position:absolute;
+        left:400px;
+        top:930px;
+    }
 
 
 
@@ -16,6 +48,9 @@
 </head>
     <body>
     <div id='background'></div>
+    <div id='table'></div>
+    <div id='chair'></div>
+    <div id='chair2'></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
         <script src='blackjack.js'></script>
     </body>
